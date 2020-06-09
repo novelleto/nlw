@@ -3,6 +3,8 @@ const sqlite3 = require("sqlite3").verbose();
 const db = new sqlite3.Database("./src/database/database.db");
 
 module.exports = db;
+// 1 - iniciar o DB - remover as \\ dos itens db.serialize, db.run (toda a estrutura)
+// linha 8 até a 50. executar nano src/database/db.js
 //db.serialize(() => {
 //  db.run(`
 //      CREATE TABLE IF NOT EXISTS places (
@@ -20,7 +22,7 @@ module.exports = db;
 //      INSERT INTO places (
 //        name,
 //        image,
-//        address,
+//       address,
 //        complement,
 //        state,
 //        city,
